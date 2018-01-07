@@ -43,24 +43,23 @@ var rules = [
         {
           loader: "css-loader",
           options: {
-            minimize: process.env.NODE_ENV === "production",
-            sourceMap: "inline"
+            minimize: process.env.NODE_ENV === "production"
           }
         },
         {
           loader: "postcss-loader",
-          options: { sourceMap: "inline" }
+          options: {}
         },
         {
           loader: "sass-loader",
-          options: { sourceMap: "inline" }
+          options: {}
         },
         {
           loader: "autoprefixer-loader?browsers=last 2 version"
         },
         {
           loader: "resolve-url-loader",
-          options: { sourceMap: "inline" }
+          options: {}
         }
       ]
     })
