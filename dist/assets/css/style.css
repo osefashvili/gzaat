@@ -5866,7 +5866,7 @@ button.close {
     .top-menu__list-item {
       padding: 14px; }
     .top-menu__list-link {
-      text-decoration: none;
+      text-decoration: none !important;
       color: #4e4e4e;
       font-weight: 700; }
 
@@ -5892,7 +5892,6 @@ button.close {
           flex-direction: column; }
   .welcome__logo {
     display: block;
-    background: url(/assets/images/logo.svg) no-repeat center;
     width: 200px;
     height: 200px;
     -webkit-background-size: 100% auto;
@@ -5901,3 +5900,18 @@ button.close {
       background: red; }
   .welcome__heading {
     font-size: 21px; }
+
+.navbar-default {
+  background: white;
+  border-bottom: none; }
+  .navbar-default .navbar-brand {
+    width: 297px;
+    height: 100px; }
+
+.navbar-nav {
+  padding-top: 40px; }
+  .navbar-nav-href {
+    font-size: 16px;
+    color: #4e4e4e !important;
+    font-weight: 700;
+    text-transform: uppercase; }
