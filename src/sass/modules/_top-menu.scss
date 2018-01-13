@@ -1,13 +1,19 @@
 .top-menu {
+  background: #EFF0F1;
   &__list {
     list-style: none;
     display: flex;
     padding: 0;
     margin: 0;
     justify-content: flex-end;
+    height: 45px;
     &-item {
+      padding: 14px;
     }
     &-link {
+      text-decoration: none;
+      color: #4e4e4e;
+      font-weight: 700;
     }
   }
 }

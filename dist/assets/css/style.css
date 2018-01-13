@@ -5848,18 +5848,27 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-.top-menu__list {
-  list-style: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+.top-menu {
+  background: #EFF0F1; }
+  .top-menu__list {
+    list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 45px; }
+    .top-menu__list-item {
+      padding: 14px; }
+    .top-menu__list-link {
+      text-decoration: none;
+      color: #4e4e4e;
+      font-weight: 700; }
 
 .welcome {
   display: -webkit-box;
