@@ -16,12 +16,14 @@
 }
 
 .navbar-nav {
-  padding-top: 40px;
   @media (max-width: 1600px) {
     margin-left: 30px;
   }
   &__flag {
     border: solid 1px #dddddd;
+  }
+  &-list{
+      padding-top: 30px;
   }
   &-href {
     font-size: 16px;
@@ -30,6 +32,9 @@
     text-transform: uppercase;
     padding-left: 28px !important;
     padding-right: 28px !important;
+     &:hover{
+            border-bottom: 2px solid #FDB900;
+            }
     @media (max-width: 1600px) {
       padding-left: 17px !important;
       padding-right: 17px !important;

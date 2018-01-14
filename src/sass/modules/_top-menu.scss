@@ -16,5 +16,9 @@
       padding: 14px;
       display: block;
     }
+    &-link:hover{
+      color: #000000;
+      transition:color 0.4s;
+    }
   }
 }
