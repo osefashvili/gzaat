@@ -5931,6 +5931,8 @@ button.close {
 
 .navbar-nav-list {
   padding-top: 30px; }
+  .navbar-nav-list:hover {
+    border-bottom: 2px solid #FDB900; }
 
 .navbar-nav-href {
   font-size: 16px;
@@ -5938,11 +5940,15 @@ button.close {
   font-weight: 700;
   text-transform: uppercase;
   padding-left: 28px !important;
-  padding-right: 28px !important; }
-  .navbar-nav-href:hover {
-    border-bottom: 2px solid #FDB900; }
+  padding-right: 28px !important;
+  padding-bottom: 0px !important; }
   @media (max-width: 1600px) {
     .navbar-nav-href {
       padding-left: 17px !important;
       padding-right: 17px !important;
       font-size: 15px; } }
+
+.albom {
+  max-width: 1520px;
+  height: 400px;
+  background: red; }

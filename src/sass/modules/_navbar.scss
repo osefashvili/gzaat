@@ -24,6 +24,9 @@
   }
   &-list{
       padding-top: 30px;
+      &:hover{
+        border-bottom: 2px solid #FDB900;
+        }
   }
   &-href {
     font-size: 16px;
@@ -32,9 +35,7 @@
     text-transform: uppercase;
     padding-left: 28px !important;
     padding-right: 28px !important;
-     &:hover{
-            border-bottom: 2px solid #FDB900;
-            }
+    padding-bottom: 0px !important;
     @media (max-width: 1600px) {
       padding-left: 17px !important;
       padding-right: 17px !important;
