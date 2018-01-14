@@ -1,5 +1,5 @@
 .top-menu {
-  background: #EFF0F1;
+  background: #eff0f1;
   &__list {
     list-style: none;
     display: flex;
@@ -8,12 +8,13 @@
     justify-content: flex-end;
     height: 45px;
     &-item {
-      padding: 14px;
     }
     &-link {
       text-decoration: none !important;
       color: #4e4e4e;
       font-weight: 700;
+      padding: 14px;
+      display: block;
     }
   }
 }
