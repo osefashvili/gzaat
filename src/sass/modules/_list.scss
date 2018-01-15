@@ -1,0 +1,29 @@
+.list-menu{
+    text-align: center;
+    float: left;
+    &__list-box{
+        list-style: none;
+        padding: 40px;
+    }
+    &-numbers{
+        color:#ba2b36;
+        font-weight: 700;
+        font-size: 25px;
+        height: 100px;
+
+        P{
+            font-size: 12px;
+            font-weight: 400;
+            color:#4e4e4e;
+        }
+    }
+}
+
+.borders{
+    float: right;
+    height: 54px;
+    border-right: 1px solid #D4D4D4;
+    margin-top: 48px;
+}
+
+
