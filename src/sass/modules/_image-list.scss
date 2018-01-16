@@ -1,4 +1,18 @@
 .image-size {
-  width: 100%;
-  display: block;
+    width: 100%;
+    display: block;
+  }
+
+.text-style{
+    font-size: 15px;
+    padding-top: 10px;
+    font-weight: 700;
+}
+
+.box{
+    height: 250px;
+   &_date{
+      font-weight: 400;
+      color: #B2B2B2;
+   }
 }
