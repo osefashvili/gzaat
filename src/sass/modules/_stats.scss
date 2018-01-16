@@ -1,0 +1,39 @@
+.stats {
+  &__list {
+    margin: 50px 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      padding: 0 40px;
+      &:not(:last-child) {
+        border-right: 1px solid #d4d4d4;
+      }
+      span {
+        font-family: $Calibri;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 0.75;
+        letter-spacing: 2px;
+        text-align: left;
+        color: #ba2b36;
+        display: block;
+        text-align: center;
+      }
+      small {
+        display: block;
+        margin: 9px 0;
+        margin-bottom: 0;
+        font-family: Calibri;
+        font-size: 18px;
+        line-height: 1.22;
+        text-align: center;
+        color: #4e4e4e;
+      }
+    }
+  }
+}
