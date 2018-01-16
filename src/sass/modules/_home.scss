@@ -7,12 +7,15 @@
   flex-direction: column;
   &__logo {
     display: block;
-    background: url(../images/logo.svg) no-repeat center;
+
     width: 200px;
     height: 200px;
     background-size: 100% auto;
+    &-small {
+      background: red;
+    }
   }
   &__heading {
-    font-size: 20px;
+    font-size: 21px;
   }
 }

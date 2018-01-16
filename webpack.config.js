@@ -31,7 +31,7 @@ var rules = [
     use: {
       loader: "babel-loader",
       options: {
-        presets: ["@babel/preset-env"]
+        presets: ["@babel/env"]
       }
     }
   },
@@ -53,9 +53,6 @@ var rules = [
         {
           loader: "sass-loader",
           options: {}
-        },
-        {
-          loader: "autoprefixer-loader?browsers=last 2 version"
         },
         {
           loader: "resolve-url-loader",

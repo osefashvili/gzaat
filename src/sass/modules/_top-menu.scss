@@ -1,0 +1,24 @@
+.top-menu {
+  background: #eff0f1;
+  &__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+    height: 45px;
+    &-item {
+    }
+    &-link {
+      text-decoration: none !important;
+      color: #4e4e4e;
+      font-weight: 700;
+      padding: 14px;
+      display: block;
+    }
+    &-link:hover{
+      color: #000000;
+      transition:color 0.4s;
+    }
+  }
+}
