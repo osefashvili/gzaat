@@ -6092,3 +6092,37 @@ button.close {
        -o-transform: rotate(-45deg);
           transform: rotate(-45deg);
       -webkit-transform: rotate(-45deg); }
+
+.calendar-section {
+  margin-top: 5%; }
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important; }
+
+._for-box__boxes-blue {
+  background: #05b4cd;
+  height: 350px; }
+
+._for-box__boxes-red {
+  background: #ba2b36;
+  height: 350px; }
+
+._for-box__boxes-yellow {
+  background: #fdb900;
+  height: 350px; }
+
+._for-box__title {
+  font-size: 30px;
+  padding: 10px;
+  color: #ffffff;
+  padding: 23px;
+  position: absolute; }
+
+.logo-section {
+  text-align: center;
+  padding: 60px; }
+  .logo-section__text {
+    font-weight: 700;
+    color: #4e4e4e;
+    padding-top: 10px; }

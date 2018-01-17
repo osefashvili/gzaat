@@ -1,0 +1,32 @@
+.calendar-section{
+    margin-top: 5%;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+ ._for-box{
+     &__boxes-blue{
+        background:#05b4cd;
+        height: 350px;
+      }
+      &__boxes-red{
+          background:#ba2b36;
+          height: 350px;
+        }
+      &__boxes-yellow{
+          background:#fdb900;
+          height: 350px;
+
+       }
+       &__title{
+        font-size: 30px;
+        padding: 10px;
+        color: #ffffff;
+        padding: 23px;
+        position: absolute;
+    }
+    
+
+ }
