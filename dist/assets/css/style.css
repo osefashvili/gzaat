@@ -6100,52 +6100,52 @@ button.close {
   padding: 0 !important;
   margin: 0 !important; }
 
-._for-box__boxes-blue {
+.for-box__boxes-blue {
   background: #05b4cd;
   height: 350px; }
 
-._for-box__boxes-red {
+.for-box__boxes-red {
   background: #ba2b36;
   height: 350px; }
 
-._for-box__boxes-yellow {
+.for-box__boxes-yellow {
   background: #fdb900;
   height: 350px; }
 
-._for-box__title {
+.for-box__title {
   font-size: 30px;
   padding: 10px;
   color: #ffffff;
   padding: 23px;
   position: absolute; }
 
-._for-box__text {
+.for-box__text {
   font-size: 30px;
   color: #FFFFFF;
   padding: 15px;
   float: left; }
-  ._for-box__text img {
+  .for-box__text img {
     padding-top: 20px;
     height: 230px; }
 
-._for-box__small-text {
+.for-box__small-text {
   font-size: 10px;
   padding: 0; }
 
-._for-box__big-text {
+.for-box__big-text {
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
   padding: 74px 107px 10px 10px; }
 
-._for-box__date {
+.for-box__date {
   font-size: 12px;
   color: #FFFFFF;
   font-weight: 400;
   margin-top: -15px;
   position: absolute; }
 
-._for-box__review {
+.for-box__review {
   padding: 19px;
   font-size: 14px;
   font-weight: bold;
