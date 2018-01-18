@@ -6151,3 +6151,34 @@ button.close {
   .footer-section__list-text li {
     padding: 2px;
     font-size: 10px; }
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.footer-second-section__box {
+  height: 100px;
+  background: #5b5b5b;
+  padding: 22px 12px 12px 99px; }
+  .footer-second-section__box li {
+    font-size: 10px;
+    list-style: none;
+    color: #bfbfbf;
+    font-weight: 700;
+    letter-spacing: 1px; }
+  .footer-second-section__box p {
+    font-size: 10px;
+    color: #bfbfbf;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 16px 0px 0px 38px; }
+
+.footer-second-section__text {
+  height: 100px;
+  background: #5b5b5b; }
+
+.footer-second-section__image-size {
+  height: 40px;
+  float: right;
+  padding: 3px;
+  margin: 29px 45px 0 -46px; }
