@@ -6119,6 +6119,19 @@ button.close {
   padding: 23px;
   position: absolute; }
 
+._for-box__text {
+  font-size: 30px;
+  color: #FFFFFF;
+  padding: 15px;
+  float: left; }
+  ._for-box__text img {
+    padding-top: 20px;
+    height: 230px; }
+
+._for-box__small-text {
+  font-size: 10px;
+  padding: 0; }
+
 .logo-section {
   text-align: center;
   padding: 60px; }
