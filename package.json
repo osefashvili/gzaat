@@ -4,12 +4,17 @@
   "description": "Webpack boilerplate for front-end",
   "main": "index.js",
   "scripts": {
-    "build":
-      "cross-env NODE_ENV=production ./node_modules/.bin/webpack --progress --profile --colors",
+    "build": "cross-env NODE_ENV=production ./node_modules/.bin/webpack --progress --profile --colors",
     "start": "./node_modules/.bin/webpack -w",
     "serve": "node server.js"
   },
-  "keywords": ["webpack", "boilerplate", "sass", "es6", "eslint"],
+  "keywords": [
+    "webpack",
+    "boilerplate",
+    "sass",
+    "es6",
+    "eslint"
+  ],
   "author": "David Babunashvili",
   "license": "ISC",
   "browserslist": [
