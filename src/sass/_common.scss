@@ -1,1 +1,121 @@
 @import url("https://fonts.googleapis.com/css?family=Calibri:400,700,400italic,700italic");
+
+.popover {
+  min-width: 300px;
+  border-radius: 0 !important;
+  border: none !important;
+  padding: 20px !important;
+  * {
+    color: #4e4e4e !important;
+  }
+  &-title {
+    border: none !important;
+    background-color: transparent !important;
+    font-size: 16px !important;
+    font-weight: bold;
+    padding: 0 !important;
+  }
+  .arrow {
+    border: none !important;
+    left: -10px !important;
+  }
+  &-content {
+    padding: 0 !important;
+    font-size: 14px !important;
+    margin-top: 10px;
+  }
+}
+
+.swiper {
+  &-caption {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    background: rgba(#05b4cd, 0.9);
+    padding-left: 190px;
+    padding-right: 45px;
+    max-width: 550px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @media (max-width: 1600px) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    h4 {
+      font-family: $Calibri;
+      font-size: 50px;
+      color: #ffffff;
+      text-transform: uppercase;
+      // transform: translateX(-20px);
+      // opacity: 0;
+      @media (max-width: 1600px) {
+        font-size: 40px;
+      }
+    }
+    p {
+      font-family: $Calibri;
+      font-size: 18px;
+      line-height: 1.33;
+      text-align: left;
+      color: #ffffff;
+      @media (max-width: 1600px) {
+        font-size: 16px;
+      }
+    }
+  }
+  &-slide {
+    img {
+      width: 100%;
+    }
+  }
+  &-pagination {
+    position: static !important;
+    margin-top: 36px;
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-bullet {
+      width: 26px !important;
+      height: 26px !important;
+      opacity: 1 !important;
+      background: transparent !important;
+      position: relative;
+      margin: 0px 10px;
+      &:not(.swiper-pagination-bullet-active):before {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: #dfdfdf;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        border-radius: 50px;
+      }
+      &-active {
+        background: #fdb900 !important;
+      }
+    }
+  }
+}
+
+.bounceInLeft {
+  animation: bounceInLeft 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  transform: translateX(-180px);
+  opacity: 0;
+  transition: all 04s;
+}
+
+@keyframes bounceInLeft {
+  0% {
+    transform: translateX(-180px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

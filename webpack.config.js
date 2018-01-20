@@ -2,18 +2,19 @@ var path = require("path");
 var webpack = require("webpack");
 var BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 process.env.NODE_ENV = process.env.NODE_ENV || "development";
 
 // Webpack Plugins
 var plugins = [
   new webpack.NoEmitOnErrorsPlugin(),
-  new webpack.optimize.UglifyJsPlugin({
+  new UglifyJsPlugin({
     compress: {
       warnings: false,
       screw_ie8: true,
       drop_console: true,
-      drop_debugger: true
+      drop_debugger: false
     }
   }),
   new webpack.optimize.OccurrenceOrderPlugin(),
@@ -136,5 +137,10 @@ module.exports = {
   module: {
     rules: rules
   },
-  plugins: plugins
+  plugins: plugins,
+  resolve: {
+    alias: {
+      node_modules: path.resolve(__dirname, "node_modules/")
+    }
+  }
 };

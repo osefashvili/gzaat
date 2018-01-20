@@ -10,9 +10,25 @@
 </head>
 
 <body>
-    <nav class="top-menu">
-        <div class="container">
-            <div class="row">
+    <nav class="navbar navbar-default js-sticky-navbar">
+        <div class="container navbar-container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">
+                    <img class="navbar-brand__img" src="assets/images/logo.svg ">
+                    <img class="navbar-brand__img--sm" src="assets/images/logo--sm.svg ">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
                 <ul class="top-menu__list">
                     <li class="top-menu__list-item">
                         <a href="#" class="top-menu__list-link">News</a>
@@ -36,33 +52,50 @@
                         <a href="#" class="top-menu__list-link">Contact</a>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </nav>
-    <nav class="navbar navbar-default">
-        <div class="container navbar-container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="#" class="navbar-brand">
-                    <img class="navbar-brand__img" src="assets/images/logo.svg ">
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right js-navbar-right">
+                    <li class="navbar-nav-list ">
+                        <a href="#" class="navbar-nav__fb">
+                            <img src="assets/images/fb.svg">
+                        </a>
+                    </li>
+                    <li class="navbar-nav-list ">
+                        <a href="#" class="navbar-nav__flag">
+                            <img src="assets/images/georgia.svg ">
+                        </a>
+                    </li>
+                </ul>
                 <ul class="nav navbar-nav ">
                     <li class="navbar-nav-list ">
                         <a href="# " class="navbar-nav-href ">About</a>
                     </li>
-                    <li class="navbar-nav-list ">
+                    <li class="navbar-nav-list">
                         <a href="# " class="navbar-nav-href ">Admission</a>
+                        <div class="navbar-nav-list__dropdown">
+                            <div class="navbar-nav-list__dropdown-container">
+                                <div class="navbar-nav-list__dropdown-description">
+                                    <img src="./assets/images/navabr-dropdown.jpg" alt=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, pariatur rerum neque illo
+                                    repellat explicabo voluptas necessitatibus eos, esse voluptatum deserunt ad cum nihil
+                                    architecto doloremque debitis obcaecati deleniti incidunt.
+                                </div>
+                                <ul class="navbar-nav-list__dropdown-list">
+                                    <li class="navbar-nav-list__dropdown-list-item">
+                                        <a href="#">Welcome</a>
+                                    </li>
+                                    <li class="navbar-nav-list__dropdown-list-item">
+                                        <a href="#">Applying</a>
+                                    </li>
+                                    <li class="navbar-nav-list__dropdown-list-item">
+                                        <a href="#">Tuition and financial Assistance</a>
+                                    </li>
+                                    <li class="navbar-nav-list__dropdown-list-item">
+                                        <a href="#">Financial Aid Application</a>
+                                    </li>
+                                    <li class="navbar-nav-list__dropdown-list-item">
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                     <li class="navbar-nav-list ">
                         <a href="# " class="navbar-nav-href ">Academics</a>
@@ -77,32 +110,50 @@
                         <a href="# " class="navbar-nav-href ">Summer academy</a>
                     </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right ">
-                    <li class="navbar-nav-list ">
-                        <a href="#" class="navbar-nav__fb">
-                            <img src="assets/images/fb.svg">
-                        </a>
-                    </li>
-                    <li class="navbar-nav-list ">
-                        <a href="#" class="navbar-nav__flag">
-                            <img src="assets/images/georgia.svg ">
-                        </a>
-                    </li>
-                </ul>
+
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
 
-    <section class="slider-section ">
+    <section class="slider-section fade">
         <div class="container ">
-            <div class="albom ">
-
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./assets/images/slide.jpg" alt="">
+                        <div class="swiper-caption">
+                            <h4>Caption</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/slide.jpg" alt="">
+                        <div class="swiper-caption">
+                            <h4>Caption2</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/slide.jpg" alt="">
+                        <div class="swiper-caption">
+                            <h4>Caption3</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination-wrapper">
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
-    <section class="stats-section ">
+    <section class="stats-section fade">
         <ul class="stats__list ">
             <li class="stats__list-item ">
                 <span>500+</span>
@@ -128,14 +179,13 @@
             </li>
         </ul>
     </section>
-    <section class="text-center-section ">
-        <div class="container ">
+
+    <section class="images-section fade">
+        <div class="container text-center-section">
             <div class="col-lg-12 ">
                 <spam class="center-text ">News</spam>
             </div>
         </div>
-    </section>
-    <section class="images-section ">
         <div class="container ">
             <div class="row ">
                 <div class="col-lg-3 ">
@@ -185,7 +235,7 @@
             </div>
         </div>
     </section>
-    <section class="border-section">
+    <section class="border-section fade">
         <div class="container">
             <div class="border-section__hr"></div>
             <button type="button" class="border-section__button">See all news
@@ -193,12 +243,94 @@
             </button>
         </div>
     </section>
-    <section class="calendar-section">
+    <section class="calendar-section fade">
         <div class="container">
             <div class="for-box">
                 <div class="row">
                     <div class="col-lg-4 nopadding">
                         <div class="for-box__boxes-blue">
+                            <div class="calendar">
+                                <div class="calendar__head">
+                                    <h4 class="calendar__heading">Calendar</h4>
+                                    <ul class="calendar__tabs">
+                                        <li class="calendar__tabs-item">
+                                            <a href="#" data-target=".js-calendar-academic" class="active js-calendar-tab-item">Academic</a>
+                                        </li>
+                                        <li class="calendar__tabs-item">
+                                            <a href="#" data-target=".js-calendar-admissions" class="js-calendar-tab-item">Admissions</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="calendar__tabs-panels">
+                                    <div class="calendar__tabs-panel active js-calendar-panel js-calendar-academic">
+                                        <table class="calendar__table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Nov 10, 2017</td>
+                                                    <td>
+                                                        <a href="#" title="Lorem ipsum dolor sit amet" data-toggle="popover" data-trigger="hover" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit....</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nov 10, 2017</td>
+                                                    <td>
+                                                        <a href="#" title="Lorem ipsum dolor sit amet" data-toggle="popover" data-trigger="hover" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nov 10, 2017</td>
+                                                    <td>
+                                                        <a href="#" title="Lorem ipsum dolor sit amet" data-toggle="popover" data-trigger="hover" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nov 10, 2017</td>
+                                                    <td>
+                                                        <a href="#" title="Lorem ipsum dolor sit amet" data-toggle="popover" data-trigger="hover" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <a href="#" class="calendar__see-all">View full calendar
+                                            <i></i>
+                                        </a>
+                                    </div>
+                                    <div class="calendar__tabs-panel js-calendar-panel js-calendar-admissions">
+                                        <table class="calendar__table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Nov 10, 2017</td>
+                                                    <td>
+                                                        <a href="#" title="Lorem ipsum dolor sit amet" data-toggle="popover" data-trigger="hover" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nov 10, 2017</td>
+                                                    <td>
+                                                        <a href="#" title="Lorem ipsum dolor sit amet" data-toggle="popover" data-trigger="hover" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nov 10, 2017</td>
+                                                    <td>
+                                                        <a href="#" title="Lorem ipsum dolor sit amet" data-toggle="popover" data-trigger="hover" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nov 10, 2017</td>
+                                                    <td>
+                                                        <a href="#" title="Lorem ipsum dolor sit amet" data-toggle="popover" data-trigger="hover" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <a href="#" class="calendar__see-all">View all
+                                            <i></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 nopadding">
@@ -210,25 +342,25 @@
                                         <tr>
                                             <td>Nov 10, 2017</td>
                                             <td>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                                                <a href="#" title="Lorem ipsum dolor sit amet" data-toggle="popover" data-trigger="hover" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Nov 10, 2017</td>
                                             <td>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                                                <a href="#" title="Lorem ipsum dolor sit amet" data-toggle="popover" data-trigger="hover" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Nov 10, 2017</td>
                                             <td>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                                                <a href="#" title="Lorem ipsum dolor sit amet" data-toggle="popover" data-trigger="hover" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Nov 10, 2017</td>
                                             <td>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                                                <a href="#" title="Lorem ipsum dolor sit amet" data-toggle="popover" data-trigger="hover" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</a>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -269,7 +401,7 @@
             </div>
         </div>
     </section>
-    <section class="logo-section">
+    <section class="logo-section fade">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -366,7 +498,7 @@
     </section>
     <section class="footer-second-section">
         <div class="container">
-            <div class="row">
+            <div class="row ">
                 <div class="footer-second-section__content">
                     <div class="footer-second-section__address">
                         <ul>

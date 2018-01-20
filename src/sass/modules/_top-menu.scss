@@ -5,10 +5,10 @@
     display: flex;
     padding: 0;
     margin: 0;
+    margin-bottom: 40px;
     justify-content: flex-end;
     height: 45px;
-    &-item {
-    }
+    width: 100%;
     &-link {
       text-decoration: none !important;
       color: #4e4e4e;
@@ -16,9 +16,9 @@
       padding: 14px;
       display: block;
     }
-    &-link:hover{
+    &-link:hover {
       color: #000000;
-      transition:color 0.4s;
+      transition: color 0.4s;
     }
   }
 }
