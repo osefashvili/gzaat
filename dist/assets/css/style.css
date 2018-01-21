@@ -7611,6 +7611,22 @@ button.swiper-pagination-bullet {
     padding-top: 20px; }
   .category__href:hover {
     color: #ba2b36; }
+  .category li a:before {
+    content: '';
+    display: inline-block;
+    width: 0px;
+    height: 2px;
+    background: #ba2b36;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    margin-right: 5px;
+    -webkit-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+         -o-transform: translateY(-2px);
+            transform: translateY(-2px); }
+  .category li a:hover:before {
+    width: 6px; }
   .category__size {
     color: #ba2b36;
     padding-left: 37px;

@@ -15,6 +15,24 @@
     &__href:hover{
         color: #ba2b36;
     }
+
+    li{
+        a{
+            &:before{
+                content:'';
+                display: inline-block;
+                width:0px;
+                height:2px;
+                background:#ba2b36;
+                transition: all 0.4s;
+                margin-right:5px;
+                transform: translateY(-2px);
+            }
+            &:hover:before{
+width:6px;
+            }
+        }
+    }
    &__size{
        color: #ba2b36;
        padding-left: 37px;
