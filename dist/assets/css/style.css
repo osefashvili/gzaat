@@ -7596,3 +7596,29 @@ button.swiper-pagination-bullet {
   height: 40px;
   float: right;
   padding: 3px; }
+
+.category {
+  height: 680px; }
+  .category__list {
+    list-style: none;
+    padding-top: 120px; }
+  .category__href {
+    text-decoration: none !important;
+    line-height: 30px;
+    letter-spacing: 0.32px;
+    color: #4e4e4e;
+    font-weight: 700;
+    padding-top: 20px; }
+  .category__href:hover {
+    color: #ba2b36; }
+  .category__size {
+    color: #ba2b36;
+    padding-left: 37px;
+    padding-top: 40px; }
+  .category img {
+    max-width: 100%;
+    padding-top: 15px; }
+  .category p {
+    text-align: left;
+    padding: 47px;
+    color: #4e4e4e; }
