@@ -1,4 +1,58 @@
+.images-section {
+  .row {
+    display: flex;
+  }
+}
 .image-size {
   width: 100%;
   display: block;
+}
+
+.text-style {
+  font-size: 15px;
+  padding-top: 10px;
+  font-weight: 700;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  &_date {
+    font-weight: 400;
+    color: #b2b2b2;
+    margin-top: auto;
+  }
+  &__title {
+    a {
+      display: block;
+      font-family: $Calibri;
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 1.18;
+      text-align: left;
+      color: #4e4e4e;
+      &:hover {
+        text-decoration: none;
+      }
+      @media (max-width: 1600px) {
+        font-size: 16px;
+      }
+    }
+  }
+  a {
+    display: block;
+    overflow: hidden;
+    img {
+      transition: transform 0.6s;
+    }
+  }
+  &:hover {
+    a {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
 }

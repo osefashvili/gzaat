@@ -1,0 +1,50 @@
+.border-section {
+  margin-top: 78px;
+  &__hr {
+    border-bottom: 1px solid #ededed;
+  }
+
+  &__text {
+    text-align: center;
+    margin-top: -22px;
+  }
+
+  &__button {
+    background: #fdb900;
+    border: none;
+    height: auto !important;
+    padding: 11px 0;
+    width: 180px;
+    font-weight: 700;
+    font-size: 16px;
+    transform: translateY(-25px);
+    margin: auto;
+    display: block;
+    transition: all 0.4s;
+    color: #ffffff;
+    i {
+      display: inline-block;
+      margin-left: 0px;
+      transform: translateX(0px);
+      transition: all 0.4s;
+      &:after {
+        content: "";
+        display: block;
+        float: right;
+        width: 7px;
+        height: 7px;
+        border-top: 2px solid #ffffff;
+        border-right: 2px solid #ffffff;
+        transform: rotate(45deg);
+        margin-left: 5px;
+        transition: all 0.3s;
+      }
+    }
+    &:hover {
+      background: darken(#fdb900, 3%);
+      i {
+        transform: translateX(3px);
+      }
+    }
+  }
+}
