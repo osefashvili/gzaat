@@ -63,6 +63,32 @@
                 <ul class="nav navbar-nav ">
                     <li class="navbar-nav-list ">
                         <a href="# " class="navbar-nav-href ">About</a>
+                        <div class="navbar-nav-list__dropdown">
+                            <div class="navbar-nav-list__dropdown-container">
+                                <div class="navbar-nav-list__dropdown-description">
+                                    <img src="./assets/images/navabr-dropdown.jpg" alt=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, pariatur rerum neque illo
+                                    repellat explicabo voluptas necessitatibus eos, esse voluptatum deserunt ad cum nihil
+                                    architecto doloremque debitis obcaecati deleniti incidunt.
+                                </div>
+                                <ul class="navbar-nav-list__dropdown-list">
+                                    <li class="navbar-nav-list__dropdown-list-item">
+                                        <a href="#">Welcome</a>
+                                    </li>
+                                    <li class="navbar-nav-list__dropdown-list-item">
+                                        <a href="#">Applying</a>
+                                    </li>
+                                    <li class="navbar-nav-list__dropdown-list-item">
+                                        <a href="#">Tuition and financial Assistance</a>
+                                    </li>
+                                    <li class="navbar-nav-list__dropdown-list-item">
+                                        <a href="#">Financial Aid Application</a>
+                                    </li>
+                                    <li class="navbar-nav-list__dropdown-list-item">
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                     <li class="navbar-nav-list">
                         <a href="# " class="navbar-nav-href ">Admission</a>
@@ -122,7 +148,7 @@
         </div>
     </nav>
 
-    <section class="slider-section fade">
+    <section class="slider-section">
         <div class="container ">
             <!-- Slider main container -->
             <div class="swiper-container">
@@ -137,14 +163,15 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/images/slide.jpg" alt="">
+                        <img src="http://aykam.biz/wp-content/uploads/autohaus-goos-modelle-aygo-galerie-03-toyota-schwarz-auto-galerieelement-slider-1520x600-23.jpg"
+                            alt="">
                         <div class="swiper-caption">
                             <h4>Caption2</h4>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/images/slide.jpg" alt="">
+                        <img src="https://www.sandhamn.com/wp-content/uploads/2016/04/traningsweekend-1520x600-925x365.jpg" alt="">
                         <div class="swiper-caption">
                             <h4>Caption3</h4>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
@@ -158,7 +185,7 @@
             </div>
         </div>
     </section>
-    <section class="stats-section fade">
+    <section class="stats-section transition">
         <ul class="stats__list ">
             <li class="stats__list-item ">
                 <span>500+</span>
@@ -182,10 +209,14 @@
                 <span>25000</span>
                 <small>Books</small>
             </li>
+            <li class="stats__list-item ">
+                <span>563k</span>
+                <small>Financial Aid</small>
+            </li>
         </ul>
     </section>
 
-    <section class="images-section fade">
+    <section class="images-section transition">
         <div class="container text-center-section">
             <div class="col-lg-12 ">
                 <spam class="center-text ">News</spam>
@@ -239,16 +270,15 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="border-section fade">
-        <div class="container">
+        <div class="container border-section">
             <div class="border-section__hr"></div>
             <button type="button" class="border-section__button">See all news
                 <i></i>
             </button>
         </div>
     </section>
-    <section class="calendar-section fade">
+
+    <section class="calendar-section transition">
         <div class="container">
             <div class="for-box">
                 <div class="row">
@@ -406,7 +436,7 @@
             </div>
         </div>
     </section>
-    <section class="logo-section fade">
+    <section class="logo-section transition">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -424,149 +454,165 @@
     </section>
     <section class="footer-section">
         <div class="container">
-            <div class="row">
+            <div class="row transition">
                 <div class="footer-section__list">
                     <div class="col-lg-2">
                         <div class="footer-section__list-title">
-                            <a href="#">
-                                <p>About</p>
-                            </a>
+                            <h4 class="footer-section__list-heading">About</h4>
                             <ul class="footer-section__list-text">
-                                <a href="#">
-                                    <li>Overview</li>
-                                </a>
-                                <a href="#">
-                                    <li>Governance</li>
-                                </a>
+                                <li>
+                                    <a href="#">Overview</a>
+                                </li>
+                                <li>
+                                    <a href="#">Governance</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-2">
                         <div class="footer-section__list-title">
-                            <a href="#">
-                                <p>Admission</p>
-                                <ul class="footer-section__list-text">
-                                    <a href="#">
-                                        <li>Welcome</li>
-                                    </a>
-                                    <a href="#">
-                                        <li>Applying</li>
-                                    </a>
-                                    <a href="#">
-                                        <li>Tuition and Financial
-                                            <a href="#">
-                                                <br>Assistance</br>
-                                        </li>
-                                        </a>
-                                        <a href="#">
-                                            <li>Financial Aid Application </li>
-                                        </a>
-                                </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="footer-section__list-title">
-                            <a href="#">
-                                <p>Academics</p>
-                            </a>
+                            <h4 class="footer-section__list-heading">Admission</h4>
                             <ul class="footer-section__list-text">
-                                <a href="#">
-                                    <li>Overview</li>
-                                </a>
-                                <a href="#">
-                                    <li>Academics (By Grades)</li>
-                                </a>
-                                <a href="#">
-                                    <li>Departments</li>
-                                </a>
-                                <a href="#">
-                                    <li>College Guidance </li>
-                                </a>
-                                <a href="#">
-                                    <li>Donald Thomas Library </li>
-                                </a>
-                                <a href="#">
-                                    <li>Computer Program</li>
-                                </a>
+
+                                <li>
+                                    <a href="#">Welcome</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Applying</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Tuition and Financial Assistance </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Financial Aid Application</a>
+                                </li>
+
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-2">
                         <div class="footer-section__list-title">
-                            <a href="#">
-                                <p>Student life</p>
-                            </a>
+
+                            <h4 class="footer-section__list-heading">Academics</h4>
+
                             <ul class="footer-section__list-text">
-                                <a href="#">
-                                    <li>Overview</li>
-                                </a>
-                                <a href="#">
-                                    <li>Academic Support</li>
-                                </a>
-                                <a href="#">
-                                    <li>Clubs/Activities</li>
-                                </a>
-                                <a href="#">
-                                    <li>Publications (GZAAT gazette)</li>
-                                </a>
-                                <a href="#">
-                                    <li>Student Health Services</li>
-                                </a>
+
+                                <li>
+                                    <a href="#">Overview</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Academics (By Grades)</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Departments</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">College Guidance </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Donald Thomas Library</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Computer Program</a>
+                                </li>
+
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-2">
                         <div class="footer-section__list-title">
-                            <a href="#">
-                                <p>Community</p>
-                                <ul class="footer-section__list-text">
-                                    <a href="#">
-                                        <li>Regional Teachers’
-                                            <br> Conference</br>
-                                        </li>
-                                    </a>
-                                    <a href="#">
-                                        <li>Saturday School</li>
-                                    </a>
-                                    <a href="#">
-                                        <li>Saturday Academy </li>
-                                    </a>
-                                </ul>
+
+                            <h4 class="footer-section__list-heading">Student life</h4>
+
+                            <ul class="footer-section__list-text">
+
+                                <li>
+                                    <a href="#">Overview</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Academic Support</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Clubs/Activities</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Publications (GZAAT gazette)</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Student Health Services</a>
+                                </li>
+
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 ">
                         <div class="footer-section__list-title">
-                            <a href="#">
-                                <p>News</p>
-                            </a>
+
+                            <h4 class="footer-section__list-heading">Community</h4>
                             <ul class="footer-section__list-text">
-                                <a href="#">
-                                    <li class="footer-section__list-size">Calendar </li>
-                                </a>
-                                <a href="#">
-                                    <li class="footer-section__list-size">Summer Academy </li>
-                                </a>
-                                <a href="#">
-                                    <li class="footer-section__list-size">Alumni</li>
-                                </a>
-                                <a href="#">
-                                    <li class="footer-section__list-size">FAQ</li>
-                                </a>
-                                <a href="#">
-                                    <li class="footer-section__list-size">Contact</li>
-                                </a>
+
+                                <li>
+                                    <a href="#">Regional Teachers’ Conference </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Saturday School </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Saturday Academy</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 ">
+                        <div class="footer-section__list-title">
+                            <h4 class="footer-section__list-heading">News</h4>
+                            <ul class="footer-section__list-text">
+
+                                <li class="footer-section__list-size">
+                                    <a href="#">Calendar </a>
+                                </li>
+
+                                <li class="footer-section__list-size">
+                                    <a href="#">Summer Academy </a>
+                                </li>
+
+                                <li class="footer-section__list-size">
+                                    <a href="#">Alumni</a>
+                                </li>
+
+                                <li class="footer-section__list-size">
+                                    <a href="#">FAQ</a>
+                                </li>
+
+                                <li class="footer-section__list-size">
+                                    <a href="#">Contact</a>
+                                </li>
+
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="footer-second-section">
-        <div class="container">
-            <div class="row ">
+        <div class="container footer-second-section">
+            <div class="row transition">
                 <div class="footer-second-section__content">
-                    <div class="footer-second-section__address">
+                    <div class="footer-second-section__address ">
                         <ul>
                             <li>Lisi Lake, Tbilisi 0186, Georgia</li>
                             <li>Tel: +995 32 2227889 / +995 32 2227441</li>

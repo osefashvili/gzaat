@@ -107,6 +107,15 @@
   opacity: 0;
   transition: all 04s;
 }
+.transition {
+  opacity: 0;
+  transform: translateY(70px);
+  transition: all 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.transition.slideUp {
+  transform: translateY(0px);
+  opacity: 1;
+}
 
 @keyframes bounceInLeft {
   0% {

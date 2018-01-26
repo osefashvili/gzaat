@@ -81,38 +81,40 @@ $(document).ready(function() {
     return false;
   });
 
-  $(".navbar-nav-list").on("mouseenter", function() {
-    $(this)
-      .find(".navbar-nav-list__dropdown")
-      .fadeIn();
-  });
+  // $(".navbar-nav-list").on("mouseenter", function() {
+  //   $(this)
+  //     .find(".navbar-nav-list__dropdown")
+  //     .addClass("fadeIn");
+  // });
 
-  $(".navbar-nav-list").on("mouseleave", function() {
-    $(this)
-      .find(".navbar-nav-list__dropdown")
-      .fadeOut();
-  });
+  // $(".navbar-nav-list").on("mouseleave", function() {
+  //   var that = $(this);
+  //   $(this)
+  //     .find(".navbar-nav-list__dropdown")
+  //     .addClass("fadeOut");
+  //   setTimeout(function() {
+  //     that.removeClass("fadeIn");
+  //   }, 200);
+  // });
 });
 
 $(window).on("load", function() {
   $(window)
     .scroll(function() {
       var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-      $(".fade").each(function() {
+      $(".transition").each(function() {
         /* Check the location of each desired element */
         var objectBottom = $(this).offset().top + $(this).outerHeight();
 
         /* If the element is completely within bounds of the window, fade it in */
-        if (objectBottom < windowBottom) {
+        if (objectBottom - $(this).height() / 2 < windowBottom) {
           //object comes into view (scrolling down)
-          if ($(this).css("opacity") == 0) {
-            $(this).fadeTo(500, 1);
-          }
+          // if ($(this).css("opacity") == 0) {
+          //   $(this).fadeTo(500, 1);
+          // }
+          $(this).addClass("slideUp");
         } else {
-          //object goes out of view (scrolling up)
-          if ($(this).css("opacity") == 1) {
-            $(this).fadeTo(500, 0);
-          }
+          $(this).removeClass("slideUp");
         }
       });
     })
