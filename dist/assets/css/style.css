@@ -7675,47 +7675,44 @@ button.swiper-pagination-bullet {
   padding: 0 !important;
   margin: 0 !important; }
 
-.footer-second-section__content {
-  background: #5b5b5b;
-  padding: 0px 137px;
-  padding-top: 45px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.footer-second-section__address ul {
-  padding: 0;
-  margin: 0; }
-
-.footer-second-section__address li {
-  font-size: 12px;
-  list-style: none;
-  color: #bfbfbf;
-  font-weight: 700;
-  letter-spacing: 1px; }
-
-.footer-second-section__address p {
-  font-size: 12px;
-  color: #bfbfbf;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin: 45px 0; }
-
-.footer-second-section__social {
-  height: 100px;
-  background: #5b5b5b; }
-  .footer-second-section__social a {
-    display: inline-block; }
-
-.footer-second-section__image-size {
-  height: 40px;
-  float: right;
-  padding: 3px; }
+.footer-second-section {
+  overflow: hidden; }
+  .footer-second-section__content {
+    background: #5b5b5b;
+    padding: 0px 137px;
+    padding-top: 45px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .footer-second-section__address ul {
+    padding: 0;
+    margin: 0; }
+  .footer-second-section__address li {
+    font-size: 12px;
+    list-style: none;
+    color: #bfbfbf;
+    font-weight: 700;
+    letter-spacing: 1px; }
+  .footer-second-section__address p {
+    font-size: 12px;
+    color: #bfbfbf;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 45px 0; }
+  .footer-second-section__social {
+    height: 100px;
+    background: #5b5b5b; }
+    .footer-second-section__social a {
+      display: inline-block; }
+  .footer-second-section__image-size {
+    height: 40px;
+    float: right;
+    padding: 3px; }
 
 .category {
   height: 680px; }
