@@ -7643,7 +7643,8 @@ button.swiper-pagination-bullet {
     border-right: 1px solid #E9E9E9; }
 
 .footer-section {
-  background: #5b5b5b; }
+  background: #5b5b5b;
+  margin-top: 100px; }
   .footer-section__list {
     height: 240px;
     padding: 47px 137px; }
@@ -7756,3 +7757,37 @@ button.swiper-pagination-bullet {
     text-align: left;
     padding: 47px;
     color: #4e4e4e; }
+
+.departaments__text {
+  text-align: center;
+  color: #ba2b36;
+  padding-top: 80px; }
+
+.departaments__paragraph {
+  text-align: center;
+  color: #4e4e4e; }
+
+.boxes .for-image {
+  margin-top: 100px; }
+
+.boxes img {
+  max-width: 100%;
+  margin-top: 40px; }
+
+.boxes span {
+  position: absolute;
+  background: #fdb900;
+  width: 94%;
+  padding: 19px 0px;
+  height: 90px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.boxes__text {
+  font-size: 22px;
+  font-weight: 700;
+  color: white; }
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important; }
