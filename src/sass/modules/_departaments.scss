@@ -9,45 +9,24 @@
     color: #4e4e4e;
   }
 }
+
 .boxes {
-  .for-image {
-    margin-top: 110px;
-  }
+  margin-top: 20px;
   img {
     max-width: 100%;
-    margin-top: 40px;
-    transition: transform 0.6s, -webkit-transform 0.6s, -o-transform 0.6s;
   }
-
   a {
-    display: block;
-    overflow: hidden;
-  }
-  a:hover {
-    opacity: (1.1);
-  }
-
-  a img:hover {
-    transform: scale(1.1);
-  }
-
-  span {
-    position: absolute;
-    background: #fdb900;
-    width: 94%;
-    padding: 19px 0px;
-    height: 90px;
-    text-align: center;
+    text-decoration: none;
+    color: white;
     text-transform: uppercase;
+    font-weight: 700;
+    font-size: 22px;
   }
   &__text {
-    font-size: 22px;
-    font-weight: 700;
-    color: white;
+    margin: 0;
+    height: 80px;
+    background: #fdb900;
+    text-align: center;
+    padding-top: 17px;
   }
-}
-
-.nopadding {
-  padding: 0 !important;
-  margin: 0 !important;
 }
