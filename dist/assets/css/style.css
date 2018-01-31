@@ -7644,7 +7644,7 @@ button.swiper-pagination-bullet {
 
 .footer-section {
   background: #5b5b5b;
-  margin-top: 100px; }
+  margin-top: 170px; }
   .footer-section__list {
     height: 240px;
     padding: 47px 137px; }
@@ -7768,11 +7768,25 @@ button.swiper-pagination-bullet {
   color: #4e4e4e; }
 
 .boxes .for-image {
-  margin-top: 100px; }
+  margin-top: 110px; }
 
 .boxes img {
   max-width: 100%;
-  margin-top: 40px; }
+  margin-top: 40px;
+  transition: transform 0.6s, -webkit-transform 0.6s, -o-transform 0.6s; }
+
+.boxes a {
+  display: block;
+  overflow: hidden; }
+
+.boxes a:hover {
+  opacity: 1.1; }
+
+.boxes a img:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+       -o-transform: scale(1.1);
+          transform: scale(1.1); }
 
 .boxes span {
   position: absolute;
