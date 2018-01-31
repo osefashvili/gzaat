@@ -7780,6 +7780,28 @@ button.swiper-pagination-bullet {
          -o-transform: scale(1.1);
             transform: scale(1.1); }
 
+.library-section {
+  text-align: center;
+  padding-top: 80px; }
+  .library-section a {
+    text-decoration: none;
+    color: #d3d3d3;
+    font-weight: 700; }
+  .library-section span:hover {
+    color: black; }
+  .library-section__arrow {
+    padding: 10px; }
+  .library-section h1 {
+    color: #ba2b36;
+    font-weight: 700; }
+
+.container__text {
+  color: #4e4e4e;
+  font-size: 18px;
+  margin: auto;
+  width: 55%;
+  padding-top: 25px; }
+
 .popover {
   min-width: 300px;
   border-radius: 0 !important;
