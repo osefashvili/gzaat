@@ -9,17 +9,19 @@
     justify-content: flex-end;
     height: 45px;
     width: 100%;
-    transform: translateX(25px);
+    transform: translateX(25px) translateY(15px);
+    opacity: 0;
     &-link {
       text-decoration: none !important;
       color: #4e4e4e;
       font-weight: 700;
       padding: 14px;
       display: block;
-    }
-    &-link:hover {
-      color: #000000;
-      transition: color 0.4s;
+      opacity: 0.8;
+      transition: all 0.4s;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }

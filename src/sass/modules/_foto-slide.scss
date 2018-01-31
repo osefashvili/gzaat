@@ -1,5 +1,36 @@
-.albom{
-    max-width: 1520px;
-    height: 400px;
-    background: red;
+.albom {
+  max-width: 1520px;
+  height: 400px;
+  background: red;
+}
+
+.slider-section {
+  transform: translateY(15px);
+  opacity: 0;
+}
+
+.slide-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.swiper-container {
+}
+
+.swiper-slide {
+  overflow: hidden;
+}
+
+.slide-space {
+  width: 100%;
+  &:after {
+    content: "";
+    display: block;
+    padding-bottom: 39%;
+  }
 }
