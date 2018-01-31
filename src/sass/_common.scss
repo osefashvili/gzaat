@@ -32,11 +32,15 @@
     left: 0;
     bottom: 50px;
     background: rgba(#05b4cd, 0.9);
-    padding-left: 190px;
-    padding-right: 45px;
+    padding-left: 0px;
+    padding-right: 0px;
     max-width: 550px;
     padding-top: 40px;
     padding-bottom: 40px;
+    transition: all 2s cubic-bezier(0.23, 1, 0.32, 1);
+    width: 0px;
+    opacity: 0;
+    overflow: hidden;
     @media (max-width: 1600px) {
       padding-top: 30px;
       padding-bottom: 30px;
@@ -46,6 +50,7 @@
       font-size: 50px;
       color: #ffffff;
       text-transform: uppercase;
+      width: 315px;
       // transform: translateX(-20px);
       // opacity: 0;
       @media (max-width: 1600px) {
@@ -58,6 +63,7 @@
       line-height: 1.33;
       text-align: left;
       color: #ffffff;
+      width: 315px;
       @media (max-width: 1600px) {
         font-size: 16px;
       }
@@ -107,6 +113,13 @@
   opacity: 0;
   transition: all 04s;
 }
+
+.slideInRight {
+  opacity: 1;
+  width: 550px;
+  padding-left: 190px;
+}
+
 .transition {
   opacity: 0;
   transform: translateY(70px);
@@ -115,6 +128,14 @@
 .transition.slideUp {
   transform: translateY(0px);
   opacity: 1;
+}
+.animate {
+  transition: all 2.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.fadeInOut {
+  transform: translateY(0px) !important;
+  opacity: 1 !important;
 }
 
 @keyframes bounceInLeft {

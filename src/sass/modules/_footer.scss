@@ -1,24 +1,36 @@
 .footer-section {
   background: #5b5b5b;
+  margin-top: 170px;
   &__list {
     height: 240px;
-    padding: 47px 137px;
+    padding: 47px 100px;
+    @media (max-width: 1600px) {
+      padding: 47px 70px;
+    }
     &-heading {
       font-size: 16px;
     }
   }
   &__list-title {
     font-size: 15px;
-    color: #bfbfbf;
+    color: #ffffff;
     font-weight: 700;
     letter-spacing: 1.6px;
-    height: 180px;
     a {
       text-decoration: none;
-      color: #bfbfbf;
+      color: #ffffff;
       display: block;
+      transition: all 0.4s;
+      font-weight: normal;
       &:hover {
-        text-decoration: underline;
+        transform: translateX(5px);
+      }
+    }
+  }
+  &__list {
+    & > div:last-child {
+      .footer-section__list-title a {
+        font-size: 16px;
       }
     }
   }
@@ -30,7 +42,7 @@
     padding: 0;
     font-size: 12px;
     li {
-      padding: 2px;
+      padding: 3px 2px;
       font-size: 12px;
     }
   }
