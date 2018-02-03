@@ -1,6 +1,12 @@
 .yellow-tab {
   display: flex;
   width: 100%;
+  &__pane {
+    display: none;
+    &--active {
+      display: block;
+    }
+  }
   &__item {
     height: 50px;
     width: 100%;

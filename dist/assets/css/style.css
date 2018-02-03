@@ -7808,6 +7808,10 @@ button.swiper-pagination-bullet {
   display: -ms-flexbox;
   display: flex;
   width: 100%; }
+  .yellow-tab__pane {
+    display: none; }
+    .yellow-tab__pane--active {
+      display: block; }
   .yellow-tab__item {
     height: 50px;
     width: 100%;
