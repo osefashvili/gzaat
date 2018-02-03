@@ -7863,6 +7863,15 @@ button.swiper-pagination-bullet {
     .yellow-tab__link:hover {
       color: #fff;
       background: #fdb900; }
+  .yellow-tab__bold {
+    font-weight: bold; }
+  .yellow-tab__text {
+    color: #4e4e4e;
+    padding-top: 10px; }
+  .yellow-tab__content {
+    padding-top: 50px; }
+  .yellow-tab__height {
+    height: 27px; }
 
 ul {
   padding: 0;

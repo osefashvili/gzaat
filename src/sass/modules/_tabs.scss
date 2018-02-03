@@ -51,4 +51,17 @@
       background: #fdb900;
     }
   }
+  &__bold {
+    font-weight: bold;
+  }
+  &__text {
+    color: #4e4e4e;
+    padding-top: 10px;
+  }
+  &__content {
+    padding-top: 50px;
+  }
+  &__height {
+    height: 27px;
+  }
 }
