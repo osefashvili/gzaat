@@ -7783,6 +7783,8 @@ button.swiper-pagination-bullet {
 .library-section {
   text-align: center;
   padding-top: 80px; }
+  .library-section__font-size {
+    font-size: 60px; }
   .library-section a {
     text-decoration: none;
     color: #d3d3d3;
@@ -7797,7 +7799,7 @@ button.swiper-pagination-bullet {
 
 .container__text {
   color: #4e4e4e;
-  font-size: 18px;
+  font-size: 60px;
   margin: auto;
   width: 55%;
   padding-top: 25px; }
@@ -7844,6 +7846,7 @@ button.swiper-pagination-bullet {
     display: block;
     width: 100%;
     text-decoration: none;
+    list-style: none !important;
     height: 100%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -7859,19 +7862,27 @@ button.swiper-pagination-bullet {
             justify-content: center;
     padding: 10px;
     background-color: #f5f5f5;
-    color: #bfbfbf; }
+    color: rgba(54, 54, 54, 0.4); }
     .yellow-tab__link:hover {
       color: #fff;
       background: #fdb900; }
   .yellow-tab__bold {
     font-weight: bold; }
   .yellow-tab__text {
-    color: #4e4e4e;
+    color: rgba(54, 54, 54, 0.4);
     padding-top: 10px; }
   .yellow-tab__content {
     padding-top: 50px; }
   .yellow-tab__height {
     height: 27px; }
+
+.boxes a {
+  color: black;
+  font-size: 14px;
+  text-transform: none; }
+
+.library-section h1 {
+  font-size: 60px; }
 
 ul {
   padding: 0;
