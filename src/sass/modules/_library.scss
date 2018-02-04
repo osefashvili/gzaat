@@ -1,7 +1,8 @@
 .library-section {
   text-align: center;
   padding-top: 80px;
-  h6 {
+  &__font-size {
+    font-size: 60px;
   }
   a {
     text-decoration: none;
@@ -23,7 +24,7 @@
 .container {
   &__text {
     color: #4e4e4e;
-    font-size: 18px;
+    font-size: 60px;
     margin: auto;
     width: 55%;
     padding-top: 25px;
