@@ -2,11 +2,16 @@
   &__text {
     text-align: center;
     color: #ba2b36;
-    padding-top: 80px;
+    margin: 0;
+    margin-top: 60px;
+    font-size: 60px;
+    margin-bottom: 26px;
   }
   &__paragraph {
     text-align: center;
     color: #4e4e4e;
+    font-size: 18px;
+    margin-bottom: 47px;
   }
 }
 
@@ -29,7 +34,17 @@
     height: 80px;
     background: #fdb900;
     text-align: center;
-    padding-top: 17px;
+    padding-top: 0px;
+    a {
+      font-size: 22px !important;
+      line-height: 1 !important;
+      text-align: center;
+      color: #ffffff !important;
+      height: 80px;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+    }
   }
   a {
     display: block;
