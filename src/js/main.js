@@ -121,6 +121,23 @@ $(document).ready(function() {
   //     that.removeClass("fadeIn");
   //   }, 200);
   // });
+
+  $(".yellow-tab__item").on("click", function(e) {
+    e.preventDefault();
+    var target = $(this)
+      .find("a")
+      .attr("href");
+    $(".yellow-tab__item").removeClass("yellow-tab__item--active");
+    $(this).addClass("yellow-tab__item--active");
+    $(".yellow-tab__pane")
+      .removeClass("yellow-tab__pane--active")
+      .hide();
+    $(target)
+      .fadeIn()
+      .addClass("yellow-tab__pane--active");
+  });
+
+  return false;
 });
 
 $(window).on("load", function() {

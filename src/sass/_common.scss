@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Calibri:400,700,400italic,700italic");
-
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+  }
+}
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
 .popover {
   min-width: 300px;
   border-radius: 0 !important;

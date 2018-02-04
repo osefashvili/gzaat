@@ -1,0 +1,54 @@
+.library-section {
+  text-align: center;
+  padding-top: 60px;
+  &__font-size {
+    font-size: 60px;
+  }
+}
+
+.container {
+  &__text {
+    margin: auto;
+    width: 55%;
+    padding-top: 25px;
+    font-size: 18px;
+    line-height: 1.44;
+    text-align: left;
+    color: #4e4e4e;
+  }
+}
+
+.library {
+  &__breadcrumbs {
+    margin: 23px 0;
+    &-item {
+      > a {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.88;
+        letter-spacing: 0.3px;
+        text-align: left;
+        color: #dfdfdf;
+      }
+      &--active {
+        a {
+          color: #4d4d4d;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 5px;
+        &:after {
+          content: "";
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+          border-top: 2px solid #4d4d4d;
+          border-right: 2px solid #4d4d4d;
+          transform: rotate(45deg) translateY(-2px);
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}
