@@ -65,6 +65,7 @@
         }
       }
       &__dropdown {
+        display: none;
         position: absolute;
         visibility: hidden;
         width: 80%;
@@ -122,10 +123,16 @@
           width: 430px;
           list-style-type: none;
           border-left: 1px solid rgba(#000, 0.1);
+          padding: 0 30px;
           @media (max-width: 1600px) {
             width: 280px;
           }
           &-item {
+            display: block;
+            transition: all 0.4s;
+            &:hover {
+              transform: translateX(5px);
+            }
             a {
               font-family: $Calibri;
               font-size: 16px;
@@ -143,6 +150,7 @@
         }
       }
       &:hover .navbar-nav-list__dropdown {
+        display: block;
         visibility: visible;
         opacity: 1;
         transform: translate3d(0, 0, 0);
