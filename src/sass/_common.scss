@@ -161,3 +161,19 @@ a {
     opacity: 1;
   }
 }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+  transition: all 2.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
