@@ -7758,7 +7758,7 @@ button.swiper-pagination-bullet {
     color: white;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 22px; }
+    font-size: 25px; }
   .boxes__text {
     margin: 0;
     height: 80px;
@@ -7868,6 +7868,10 @@ button.swiper-pagination-bullet {
       background: #fdb900; }
   .yellow-tab__bold {
     font-weight: bold; }
+    .yellow-tab__bold a {
+      color: black;
+      font-size: 14px;
+      text-transform: none; }
   .yellow-tab__text {
     color: rgba(54, 54, 54, 0.4);
     padding-top: 10px; }
@@ -7875,11 +7879,6 @@ button.swiper-pagination-bullet {
     padding-top: 50px; }
   .yellow-tab__height {
     height: 27px; }
-
-.boxes a {
-  color: black;
-  font-size: 14px;
-  text-transform: none; }
 
 .library-section h1 {
   font-size: 60px; }
