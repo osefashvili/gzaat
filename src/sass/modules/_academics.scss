@@ -1,0 +1,108 @@
+.academics-section {
+  &__size {
+    font-size: 60px;
+    color: #ba2b36;
+    padding-top: 70px;
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+  }
+  p {
+    width: 55%;
+    margin: auto;
+    padding-top: 30px;
+    color: #4e4e4e;
+  }
+}
+
+.accordionButton {
+  width: 100%;
+  float: left;
+  background: pink;
+  cursor: pointer;
+  padding: 3px 0px;
+  border: none;
+}
+.accordionButton span {
+  color: #ffffff;
+  padding-left: 5px;
+  font-weight: bold;
+}
+.accordionContent {
+  width: 400px;
+  float: left;
+  background: #ffffff;
+}
+.accordionContent p {
+  font-size: 14px;
+  padding-left: 8px;
+}
+.on {
+  width: 400px;
+  float: left;
+  background: #555555;
+  cursor: pointer;
+}
+.on span {
+  color: #ffffff;
+}
+.over {
+  width: 100%;
+  float: left;
+  background: #555555;
+  cursor: pointer;
+}
+.over span {
+  color: #ffffff;
+}
+.plusMinus {
+  font-weight: bold;
+  float: right;
+  padding-right: 4px;
+  content: "+";
+}
+.pannel-title {
+  float: right;
+  a {
+    color: #2b2b2b !important;
+    font-weight: bold !important;
+  }
+}
+.collapsed {
+  font-weight: bold;
+  padding-left: 10px;
+}
+.panel-group .panel {
+  border: none;
+}
+.panel-default > .panel-heading {
+  background: white;
+  height: 50px;
+}
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+.panel-title > a:before {
+  float: left !important;
+  font-family: FontAwesome;
+  content: "\f068";
+  padding-right: 5px;
+  color: #fdb900;
+}
+
+.panel-title > a.collapsed:before {
+  float: left !important;
+  content: "\f067";
+  color: #fdb900;
+}
+.panel-title > a:hover,
+.panel-title > a:active,
+.panel-title > a:focus {
+  text-decoration: none;
+}
+
+.toggable-section {
+  max-width: 66%;
+  margin: auto;
+  padding-top: 76px;
+}
