@@ -8042,6 +8042,12 @@ button.swiper-pagination-bullet {
 .yellow-tab {
   padding-top: 100px; }
 
+.academics-section__title {
+  text-align: center; }
+
+.academics-section p {
+  text-align: left; }
+
 ul {
   padding: 0;
   margin: 0;
