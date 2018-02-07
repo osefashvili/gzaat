@@ -7650,6 +7650,8 @@ button.swiper-pagination-bullet {
 
 .footer-second-section {
   overflow: hidden; }
+  .footer-second-section .container {
+    width: 100%; }
   .footer-second-section__content {
     background: #5b5b5b;
     display: -webkit-box;
@@ -7695,7 +7697,8 @@ button.swiper-pagination-bullet {
   height: 680px; }
   .category__list {
     list-style: none;
-    padding-top: 120px; }
+    padding-top: 120px;
+    display: grid; }
   .category__href {
     text-decoration: none !important;
     line-height: 30px;
@@ -7875,7 +7878,8 @@ button.swiper-pagination-bullet {
       border-top: 7px solid #fdb900; }
     .yellow-tab__item--active .yellow-tab__link {
       color: #fff;
-      background: #fdb900; }
+      background: #fdb900;
+      list-style: none !important; }
     .yellow-tab__item--active:after {
       display: block; }
   .yellow-tab__link {
@@ -8018,6 +8022,25 @@ button.swiper-pagination-bullet {
   max-width: 66%;
   margin: auto;
   padding: 39px 0px 0px 55px; }
+
+.boxes {
+  width: 50%;
+  margin: auto;
+  height: 70px;
+  border-bottom: 1px solid;
+  border-color: rgba(119, 119, 119, 0.6); }
+  .boxes a {
+    color: #2b2b2b;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 10px; }
+  .boxes span {
+    padding-right: 35%;
+    color: rgba(119, 119, 119, 0.6);
+    font-size: 14px; }
+
+.yellow-tab {
+  padding-top: 100px; }
 
 ul {
   padding: 0;
