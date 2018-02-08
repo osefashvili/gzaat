@@ -2,15 +2,20 @@
   &__size {
     font-size: 60px;
     color: #ba2b36;
-    padding-top: 70px;
+    padding-top: 50px;
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
   }
   img {
     max-width: 100%;
   }
-  p {
-    width: 55%;
+  .text {
+    width: 953px;
+    max-width: 90%;
     margin: auto;
+    font-size: 18px;
+    line-height: 1.5;
     padding-top: 30px;
     color: #4e4e4e;
   }
@@ -102,7 +107,38 @@
 }
 
 .toggable-section {
-  max-width: 66%;
-  margin: auto;
-  padding: 39px 0px 0px 55px;
+  width: 953px;
+  max-width: 90%;
+  margin: 50px auto;
+  .panel {
+    box-shadow: none;
+    &:not(:last-child) {
+      border-bottom: 1px solid #ddd;
+      border-radius: 0 !important;
+    }
+  }
+  .panel-heading {
+    height: auto !important;
+    border-radius: 0 !important;
+    padding: 20px 0px !important;
+    .panel-title a {
+      display: flex;
+      padding: 0;
+      align-items: center;
+      &:before {
+        font-size: 12px;
+        float: left;
+        margin-top: 3px;
+        margin-right: 15px;
+      }
+      span {
+        font-size: 22px;
+      }
+    }
+  }
+  .panel-body {
+    border: none !important;
+
+    padding: 15px 30px;
+  }
 }
