@@ -3,6 +3,7 @@
   &__list {
     list-style: none;
     padding-top: 120px;
+    display: grid;
   }
   &__href {
     text-decoration: none !important;
