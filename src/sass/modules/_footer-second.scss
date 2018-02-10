@@ -30,6 +30,10 @@
       color: #ffffff;
       font-weight: 700;
       letter-spacing: 1px;
+      display: block;
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
     }
     p {
       font-size: 12px;
