@@ -29,6 +29,7 @@
       .yellow-tab__link {
         color: #fff;
         background: #fdb900;
+        list-style: none !important;
       }
       &:after {
         display: block;
@@ -54,6 +55,11 @@
   }
   &__bold {
     font-weight: bold;
+    a {
+      color: black;
+      font-size: 14px;
+      text-transform: none;
+    }
   }
   &__text {
     color: rgba(#363636, 0.4);
@@ -64,14 +70,6 @@
   }
   &__height {
     height: 27px;
-  }
-}
-
-.boxes {
-  a {
-    color: black;
-    font-size: 14px;
-    text-transform: none;
   }
 }
 

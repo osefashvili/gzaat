@@ -161,3 +161,29 @@ a {
     opacity: 1;
   }
 }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+  transition: all 2.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.page-heading {
+  font-size: 60px;
+  letter-spacing: 1.2px;
+  text-align: center;
+  margin: 0;
+  line-height: 0.7;
+  color: #ba2b36;
+  margin-bottom: 27px;
+}

@@ -5,6 +5,9 @@
 
 .footer-second-section {
   overflow: hidden;
+  .container {
+    width: 100%;
+  }
   &__content {
     background: #5b5b5b;
     display: flex;
