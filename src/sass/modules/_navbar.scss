@@ -1,6 +1,9 @@
 .navbar-default {
   background: white;
   border: none;
+  .navbar-collapse {
+    transform: translateX(25px);
+  }
   .navbar-brand {
     display: block;
     margin-top: 24px;

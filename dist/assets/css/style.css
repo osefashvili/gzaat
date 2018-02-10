@@ -6566,6 +6566,11 @@ button.swiper-pagination-bullet {
 .navbar-default {
   background: white;
   border: none; }
+  .navbar-default .navbar-collapse {
+    -webkit-transform: translateX(25px);
+        -ms-transform: translateX(25px);
+         -o-transform: translateX(25px);
+            transform: translateX(25px); }
   .navbar-default .navbar-brand {
     display: block;
     margin-top: 24px;
@@ -7619,6 +7624,8 @@ button.swiper-pagination-bullet {
     color: #ffffff;
     font-weight: 700;
     letter-spacing: 1.6px; }
+    .footer-section__list-title li {
+      display: block; }
     .footer-section__list-title a {
       text-decoration: none;
       color: #ffffff;
@@ -7676,7 +7683,10 @@ button.swiper-pagination-bullet {
     list-style: none;
     color: #ffffff;
     font-weight: 700;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    display: block; }
+    .footer-second-section__address li:not(:first-child) {
+      margin-top: 10px; }
   .footer-second-section__address p {
     font-size: 12px;
     color: #ffffff;
@@ -7814,7 +7824,8 @@ button.swiper-pagination-bullet {
 
 .container__text {
   margin: auto;
-  width: 55%;
+  max-width: 90%;
+  width: 953px;
   padding-top: 25px;
   font-size: 18px;
   line-height: 1.44;
@@ -7858,7 +7869,6 @@ button.swiper-pagination-bullet {
     .yellow-tab__pane--active {
       display: block; }
   .yellow-tab__item {
-    height: 50px;
     width: 100%;
     position: relative;
     display: -webkit-box;
@@ -7890,7 +7900,7 @@ button.swiper-pagination-bullet {
     display: block;
     width: 100%;
     text-decoration: none;
-    list-style: none !important;
+    text-decoration: none !important;
     height: 100%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -7904,7 +7914,14 @@ button.swiper-pagination-bullet {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 10px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+    padding: 15px;
     background-color: #f5f5f5;
     color: rgba(54, 54, 54, 0.4); }
     .yellow-tab__link:hover {
@@ -8062,29 +8079,39 @@ button.swiper-pagination-bullet {
     border: none !important;
     padding: 15px 30px; }
 
-.boxes {
-  width: 50%;
+.applying__text {
+  display: block;
+  width: 951px;
+  max-width: 80%;
   margin: auto;
-  height: 70px;
+  font-size: 18px;
+  line-height: 1.44;
+  color: #4e4e4e; }
+
+.applying .boxes {
+  width: 951px;
+  max-width: 80%;
+  margin: auto;
+  padding: 15px 0;
   border-bottom: 1px solid;
-  border-color: rgba(119, 119, 119, 0.6); }
-  .boxes a {
+  border-color: #dbdbdb; }
+  .applying .boxes a {
     color: #2b2b2b;
     font-size: 18px;
     font-weight: bold;
-    padding-top: 10px; }
-  .boxes span {
+    padding-top: 0px; }
+  .applying .boxes span {
     padding-right: 35%;
-    color: rgba(119, 119, 119, 0.6);
+    color: #dbdbdb;
     font-size: 14px; }
 
-.yellow-tab {
+.applying .yellow-tab {
   padding-top: 100px; }
 
-.academics-section__title {
+.applying .academics-section__title {
   text-align: center; }
 
-.academics-section p {
+.applying .academics-section p {
   text-align: left; }
 
 ul {
@@ -8320,3 +8347,19 @@ a:hover {
   line-height: 0.7;
   color: #ba2b36;
   margin-bottom: 27px; }
+
+.governance__item-title {
+  margin-bottom: 0px; }
+
+.governance__item-title a {
+  font-size: 22px;
+  color: #2b2b2b; }
+
+.governance__item-position {
+  font-size: 18px;
+  margin-top: 5px;
+  color: #2b2b2b; }
+
+.governance__item-text {
+  font-size: 18px;
+  color: #4e4e4e; }
