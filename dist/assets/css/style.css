@@ -8128,6 +8128,10 @@ button.swiper-pagination-bullet {
   .news-section__right {
     font-size: 22px;
     font-weight: bold; }
+  .news-section__right-text {
+    color: #2b2b2b; }
+    .news-section__right-text:hover {
+      color: #2b2b2b !important; }
   .news-section__paragraph {
     font-size: 18px;
     color: #4e4e4e;
@@ -8177,6 +8181,7 @@ li a {
 .pagenation-section .pagination > li > a {
   border: none !important;
   color: #2b2b2b;
+  font-size: 16px;
   padding: 12px 16px; }
 
 .pagenation-section .pagination > li > a:hover {
@@ -8188,6 +8193,9 @@ li a {
   background: #fdb900;
   color: white;
   border-color: white; }
+
+.images-section {
+  padding-left: 5.7%; }
 
 ul {
   padding: 0;
