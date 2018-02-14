@@ -27,6 +27,7 @@
       margin-left: 0px;
       transform: translateX(0px);
       transition: all 0.4s;
+      border: none !important;
       &:after {
         content: "";
         display: block;
@@ -38,6 +39,9 @@
         transform: rotate(45deg);
         margin-left: 5px;
         transition: all 0.3s;
+      }
+      &:hover {
+        background: none !important;
       }
     }
     &:hover {

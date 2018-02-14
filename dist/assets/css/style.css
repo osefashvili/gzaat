@@ -7137,7 +7137,8 @@ button.swiper-pagination-bullet {
               transform: translateX(0px);
       -webkit-transition: all 0.4s;
       -o-transition: all 0.4s;
-      transition: all 0.4s; }
+      transition: all 0.4s;
+      border: none !important; }
       .border-section__button i:after {
         content: "";
         display: block;
@@ -7154,6 +7155,8 @@ button.swiper-pagination-bullet {
         -webkit-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s; }
+      .border-section__button i:hover {
+        background: none !important; }
     .border-section__button:hover {
       background: #eeae00; }
       .border-section__button:hover i {
@@ -8113,6 +8116,78 @@ button.swiper-pagination-bullet {
 
 .applying .academics-section p {
   text-align: left; }
+
+.news-section {
+  padding-top: 80px; }
+  .news-section__left {
+    padding: 17px 62px; }
+  .news-section__title {
+    text-align: center;
+    font-size: 60px;
+    color: #ba2b36; }
+  .news-section__right {
+    font-size: 22px;
+    font-weight: bold; }
+  .news-section__paragraph {
+    font-size: 18px;
+    color: #4e4e4e;
+    padding-top: 10px; }
+  .news-section__data {
+    padding-top: 40px;
+    color: rgba(0, 0, 0, 0.6); }
+
+.news-images {
+  padding: 20px; }
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.container {
+  padding-top: 20px; }
+
+.left {
+  -ms-transform: rotate(135deg);
+   -o-transform: rotate(135deg);
+      transform: rotate(135deg);
+  -webkit-transform: rotate(135deg); }
+
+li a {
+  font-size: 12px;
+  color: #2b2b2b;
+  font-weight: bold; }
+
+.pagenation-section__code {
+  text-align: center; }
+
+.pagenation-section i {
+  border: solid #fdb900;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 2px;
+  margin-right: 5px;
+  margin-left: 5px; }
+
+.pagenation-section .right {
+  -ms-transform: rotate(-45deg);
+   -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); }
+
+.pagenation-section .pagination > li > a {
+  border: none !important;
+  color: #2b2b2b;
+  padding: 12px 16px; }
+
+.pagenation-section .pagination > li > a:hover {
+  background: #fdb900;
+  color: white;
+  border-color: white; }
+
+.pagenation-section .pagination > li > a:active {
+  background: #fdb900;
+  color: white;
+  border-color: white; }
 
 ul {
   padding: 0;

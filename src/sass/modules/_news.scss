@@ -1,0 +1,84 @@
+.news-section {
+  padding-top: 80px;
+  &__left {
+    padding: 17px 62px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 60px;
+    color: #ba2b36;
+  }
+  &__right {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  &__paragraph {
+    font-size: 18px;
+    color: #4e4e4e;
+    padding-top: 10px;
+  }
+  &__data {
+    padding-top: 40px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.news-images {
+  padding: 20px;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+li a {
+  font-size: 12px;
+  color: #2b2b2b;
+  font-weight: bold;
+}
+
+.pagenation-section {
+  &__code {
+    text-align: center;
+  }
+
+  i {
+    border: solid #fdb900;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .pagination > li > a {
+    border: none !important;
+    color: #2b2b2b;
+    padding: 12px 16px;
+  }
+  .pagination > li > a:hover {
+    background: #fdb900;
+    color: white;
+    border-color: white;
+  }
+  .pagination > li > a:active {
+    background: #fdb900;
+    color: white;
+    border-color: white;
+  }
+}

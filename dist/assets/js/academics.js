@@ -29,3 +29,73 @@ $(".panel-group").on("hide.bs.collapse", function(e) {
     .removeClass("fa-minus")
     .addClass("fa-plus");
 });
+
+var totalPage = 28;
+var eachPages = 10;
+var nowpage = 1;
+
+function pageChk() {
+  $(".pagination li").on("click", "a", function() {
+    var id = $(this)
+      .parent()
+      .attr("id");
+
+    switch (id) {
+      case "pre_item":
+        nowpage = nowpage - eachPages;
+        break;
+      case "next_item":
+        nowpage = nowpage + eachPages;
+        break;
+      case "pre_page":
+        nowpage = nowpage - 1;
+        break;
+      case "next_page":
+        nowpage = nowpage + 1;
+        break;
+      default:
+        nowpage = parseInt($(this).text());
+        break;
+    }
+    setPagenation();
+  });
+}
+
+pageChk();
+
+function setPagenation() {
+  if (nowpage <= 0) {
+    nowpage = 1;
+  } else if (totalPage < nowpage) {
+    nowpage = totalPage;
+  }
+  var startPage = Math.floor((nowpage - 1) / eachPages);
+  startPage = startPage * 10 + 1;
+  console.log(nowpage, startPage);
+
+  var html = "";
+  html += '<li id="pre_item"><a href="#">&laquo;</a></li>';
+  html += '<li id="pre_page"><a href="#"><</a></li>';
+
+  if (nowpage + totalPage % eachPages > totalPage) {
+    for (var i = startPage; i < startPage + totalPage % eachPages; i++) {
+      html += '<li><a href="#">' + i + "</a></li>";
+    }
+  } else {
+    console.log("totalPage > nowpage");
+    for (var i = startPage; i < startPage + eachPages; i++) {
+      html += '<li><a href="#">' + i + "</a></li>";
+    }
+  }
+  html += '<li id="next_page"><a href="#">></a></li>';
+  html += '<li id="next_item"><a href="#">&raquo;</a></li>';
+  $(".pagination").html(html);
+
+  $(".pagination li").each(function(i) {
+    if ($(this).text() == nowpage) {
+      $(this).addClass("active");
+    }
+  });
+  pageChk();
+  $("b").html(nowpage);
+}
