@@ -8151,10 +8151,10 @@ button.swiper-pagination-bullet {
   padding-top: 20px; }
 
 .left {
-  -ms-transform: rotate(135deg);
-   -o-transform: rotate(135deg);
-      transform: rotate(135deg);
-  -webkit-transform: rotate(135deg); }
+  -ms-transform: rotate(-45deg);
+   -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); }
 
 li a {
   font-size: 12px;
@@ -8164,19 +8164,39 @@ li a {
 .pagenation-section__code {
   text-align: center; }
 
-.pagenation-section i {
+.pagenation-section__arrow-right::before {
+  content: "";
   border: solid #fdb900;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 2px;
   margin-right: 5px;
-  margin-left: 5px; }
+  margin-left: 5px;
+  -ms-transform: rotate(135deg);
+   -o-transform: rotate(135deg);
+      transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  margin-bottom: 1.5px; }
 
-.pagenation-section .right {
+.pagenation-section__arrow-right:hover::before {
+  border-color: white; }
+
+.pagenation-section__arrow-left::after {
+  content: "";
+  border: solid #fdb900;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 2px;
+  margin-right: 5px;
+  margin-left: 5px;
   -ms-transform: rotate(-45deg);
    -o-transform: rotate(-45deg);
       transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg); }
+  -webkit-transform: rotate(-45deg);
+  margin-bottom: 1.5px; }
+
+.pagenation-section__arrow-left:hover::after {
+  border-color: white; }
 
 .pagenation-section .pagination > li > a {
   border: none !important;
@@ -8196,6 +8216,36 @@ li a {
 
 .images-section {
   padding-left: 5.7%; }
+
+.library-section__photo-width {
+  width: 960px;
+  height: 560px;
+  padding-top: 10px; }
+
+.library-section__span-style {
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 0.6;
+  font-weight: normal; }
+
+.library-section__large-text {
+  padding: 37px 126px 0px 9%;
+  text-align: left;
+  font-size: 18px;
+  color: #4e4e4e; }
+
+.library-section__social {
+  color: #2b2b2b;
+  font-weight: bold;
+  padding-top: 20px; }
+
+.library-section button {
+  width: 60px;
+  height: 60px;
+  background-color: #4267b3;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  border: none; }
 
 ul {
   padding: 0;

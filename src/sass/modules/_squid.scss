@@ -1,0 +1,32 @@
+.library-section {
+  &__photo-width {
+    width: 960px;
+    height: 560px;
+    padding-top: 10px;
+  }
+  &__span-style {
+    color: rgba(0, 0, 0, 0.6);
+    opacity: 0.6;
+    font-weight: normal;
+  }
+  &__large-text {
+    padding: 37px 126px 0px 9%;
+    text-align: left;
+    font-size: 18px;
+    color: #4e4e4e;
+  }
+  &__social {
+    color: #2b2b2b;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+  button {
+    width: 60px;
+    height: 60px;
+    background-color: #4267b3;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    border: none;
+  }
+}

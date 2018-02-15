@@ -44,8 +44,8 @@
 }
 
 .left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 
 li a {
@@ -59,17 +59,37 @@ li a {
     text-align: center;
   }
 
-  i {
+  &__arrow-right::before {
+    content: "";
     border: solid #fdb900;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 2px;
     margin-right: 5px;
     margin-left: 5px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin-bottom: 1.5px;
   }
-  .right {
+
+  &__arrow-right:hover::before {
+    border-color: white;
+  }
+  &__arrow-left::after {
+    content: "";
+    border: solid #fdb900;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2px;
+    margin-right: 5px;
+    margin-left: 5px;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
+    margin-bottom: 1.5px;
+  }
+
+  &__arrow-left:hover::after {
+    border-color: white;
   }
 
   .pagination > li > a {
