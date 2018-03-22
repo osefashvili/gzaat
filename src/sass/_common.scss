@@ -81,6 +81,14 @@ a {
         font-size: 16px;
       }
     }
+    &--right {
+      left: auto;
+      right: 0;
+    }
+    &--left {
+      left: 0;
+      right: auto;
+    }
   }
   &-slide {
     img {
@@ -203,4 +211,25 @@ a {
 .governance__item-text {
   font-size: 18px;
   color: #4e4e4e;
+}
+
+.container {
+  &.summer-academy {
+    margin-top: 50px;
+    .yellow-tab__pane {
+      .text {
+        width: 951px;
+        max-width: 80%;
+        margin: auto;
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.44;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4e4e4e;
+      }
+    }
+  }
 }

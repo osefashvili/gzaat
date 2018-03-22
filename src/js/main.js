@@ -1,13 +1,40 @@
 import $ from "jquery";
 import Swiper from "swiper";
 import "../vendor/bootstrap/js/bootstrap.js";
+import "daterangepicker";
+import "daterangepicker/daterangepicker.scss";
+import "slick-carousel";
+import "slick-carousel/slick/slick.scss";
 
 $(document).ready(function() {
+  $(".gallery").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    asNavFor: ".gallery-nav",
+    prevArrow: '<button class="slick-prev slick-arrow" type="button"></button>',
+    nextArrow: '<button class="slick-next slick-arrow" type="button"></button>'
+  });
+
+  $(".gallery-nav").slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: ".gallery",
+    dots: false,
+    centerMode: true,
+    arrows: false,
+    focusOnSelect: true
+  });
+
   //init
   $('[data-toggle="popover"]').popover();
   var interleaveOffset = 0.5;
   var swiper = new Swiper(".swiper-container", {
-    pagination: { el: ".swiper-pagination", clickable: true },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
     loop: true,
     speed: 1000,
     grabCursor: false,
@@ -20,7 +47,9 @@ $(document).ready(function() {
       init: function() {
         setTimeout(function() {
           $(".swiper-slide-active  .swiper-caption")
-            .css({ visibility: "visible" })
+            .css({
+              visibility: "visible"
+            })
             .addClass("slideInRight");
         }, 1500);
       },
@@ -53,12 +82,16 @@ $(document).ready(function() {
 
   swiper.on("slideChangeTransitionStart", function() {
     $(".swiper-slide .swiper-caption")
-      .css({ visibility: "hidden" })
+      .css({
+        visibility: "hidden"
+      })
       .removeClass("slideInRight");
 
     setTimeout(function() {
       $(".swiper-slide-active  .swiper-caption")
-        .css({ visibility: "visible" })
+        .css({
+          visibility: "visible"
+        })
         .addClass("slideInRight");
     }, 500);
   });
@@ -196,4 +229,28 @@ $(window).on("load", function() {
       });
     })
     .scroll(); //invoke scroll-handler on page-load
+
+  $(".range-picker")
+    .daterangepicker(
+      {
+        opens: "center",
+        autoUpdateInput: true,
+        autoApply: true
+      },
+      function(start, end, label) {
+        $("#from").val(start.format("MM/DD/YYYY"));
+        $("#to").val(end.format("MM/DD/YYYY"));
+
+        setTimeout(function() {
+          $(".news-date-picker form").submit();
+        }, 200);
+      }
+    )
+    .on("changeDate", function(ev) {});
+
+  $(".navbar-nav-href.parent").on("click", function(e) {
+    e.preventDefault();
+
+    return false;
+  });
 });

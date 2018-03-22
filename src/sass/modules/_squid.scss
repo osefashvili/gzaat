@@ -20,7 +20,7 @@
     font-weight: bold;
     padding-top: 20px;
   }
-  button {
+  .share {
     width: 60px;
     height: 60px;
     background-color: #4267b3;
@@ -28,5 +28,9 @@
     font-weight: bold;
     font-size: 17px;
     border: none;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
   }
 }
