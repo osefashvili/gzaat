@@ -8247,6 +8247,33 @@ li a {
   font-size: 17px;
   border: none; }
 
+.contact-section {
+  text-align: center; }
+  .contact-section__items {
+    padding: 25px; }
+  .contact-section__text {
+    color: #ba2b36; }
+  .contact-section__image-items {
+    width: 30px; }
+  .contact-section__titles {
+    font-weight: 700;
+    color: #4e4e4e;
+    line-height: 25px; }
+  .contact-section__address {
+    color: #4e4e4e; }
+  .contact-section__span-style {
+    color: #ba2b36; }
+    .contact-section__span-style:hover {
+      border-bottom: 2px solid; }
+
+.yellow-tab__social-image {
+  max-width: 100%; }
+
+.yellow-tab__social-text {
+  color: #4e4e4e;
+  width: 88%;
+  padding-left: 20%; }
+
 ul {
   padding: 0;
   margin: 0;
