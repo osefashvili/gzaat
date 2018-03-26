@@ -77,6 +77,10 @@
   }
   &-nav {
     margin-top: 15px;
+
+    .slick-track {
+      min-width: 100% !important;
+    }
     &__item {
       padding: 5px;
       box-sizing: border-box;
@@ -107,7 +111,6 @@
     }
     * {
       outline: none !important;
-      ;
     }
   }
 }

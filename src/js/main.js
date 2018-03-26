@@ -7,24 +7,34 @@ import "slick-carousel";
 import "slick-carousel/slick/slick.scss";
 
 $(document).ready(function() {
-  $(".gallery").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    fade: true,
-    asNavFor: ".gallery-nav",
-    prevArrow: '<button class="slick-prev slick-arrow" type="button"></button>',
-    nextArrow: '<button class="slick-next slick-arrow" type="button"></button>'
-  });
+  function initSummerAcademySlick() {
+    $(".gallery").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      asNavFor: ".gallery-nav",
+      prevArrow:
+        '<button class="slick-prev slick-arrow" type="button"></button>',
+      nextArrow:
+        '<button class="slick-next slick-arrow" type="button"></button>'
+    });
 
-  $(".gallery-nav").slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    asNavFor: ".gallery",
-    dots: false,
-    centerMode: true,
-    arrows: false,
-    focusOnSelect: true
+    $(".gallery-nav").slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: ".gallery",
+      dots: false,
+      centerMode: true,
+      arrows: false,
+      focusOnSelect: true
+    });
+  }
+
+  $(".reinit-summer-academy-slick").on("click", function() {
+    setTimeout(function() {
+      initSummerAcademySlick();
+    }, 100);
   });
 
   //init

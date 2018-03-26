@@ -8416,6 +8416,8 @@ li a {
 
 .gallery-nav {
   margin-top: 15px; }
+  .gallery-nav .slick-track {
+    min-width: 100% !important; }
   .gallery-nav__item {
     padding: 5px;
     -webkit-box-sizing: border-box;
