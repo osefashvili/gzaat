@@ -7,8 +7,70 @@ import "slick-carousel";
 import "slick-carousel/slick/slick.scss";
 
 $(document).ready(function() {
-  function initSummerAcademySlick() {
-    $(".gallery").slick({
+  function resetContactForm() {
+    $(".contact-form")
+      .find("input,textarea")
+      .val("");
+  }
+  function resetContactFormErrors() {
+    $(".contact-form")
+      .find("input,textarea")
+      .removeClass("has-error");
+  }
+
+  $(".contact-form").on("submit", function(e) {
+    var form = $(this);
+    form.find(".contact-form__btn").attr("disabled", "disabled");
+    e.preventDefault();
+    var token = $('meta[name="csrf-token"]').attr("content");
+    // var token = 1;
+    var name = form.find('*[name="name"]').val();
+    var surname = form.find('*[name="surname"]').val();
+    var email = form.find('*[name="email"]').val();
+    var phone = form.find('*[name="phone"]').val();
+    var message = form.find('*[name="message"]').val();
+
+    $.post(
+      $(this).attr("action"),
+      {
+        _token: token,
+        name: name,
+        surname: surname,
+        email: email,
+        phone: phone,
+        message: message
+      },
+      function(res) {
+        form.find(".contact-form__btn").removeAttr("disabled");
+        if (res.status === "success") {
+          form.find(".contact-form__message h4").text(res.title);
+          form.find(".contact-form__message p").text(res.message);
+          form.find(".contact-form__message").addClass("visible");
+          setTimeout(() => {
+            resetContactForm();
+            resetContactFormErrors();
+            form.find(".contact-form__message").removeClass("visible");
+          }, 3000);
+        } else if (res.status === "fail") {
+          form.find(".contact-form__message h4").text(res.title);
+          form.find(".contact-form__message p").text(res.message);
+          form.find(".contact-form__message").addClass("visible");
+          setTimeout(() => {
+            resetContactFormErrors();
+            form.find(".contact-form__message").removeClass("visible");
+          }, 3000);
+        } else if (res.status === "validation") {
+          resetContactFormErrors();
+          res.errors.forEach(element => {
+            form.find('*[name="' + element + '"]').addClass("has-error");
+          });
+        }
+      }
+    );
+  });
+
+  function initTabSlick() {
+    $(".js-tab-gallery").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: true,
@@ -20,7 +82,7 @@ $(document).ready(function() {
         '<button class="slick-next slick-arrow" type="button"></button>'
     });
 
-    $(".gallery-nav").slick({
+    $(".js-tab-gallery-nav").slick({
       slidesToShow: 5,
       slidesToScroll: 1,
       asNavFor: ".gallery",
@@ -31,9 +93,35 @@ $(document).ready(function() {
     });
   }
 
-  $(".reinit-summer-academy-slick").on("click", function() {
+  function initSlick() {
+    $(".js-gallery").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      asNavFor: ".gallery-nav",
+      prevArrow:
+        '<button class="slick-prev slick-arrow" type="button"></button>',
+      nextArrow:
+        '<button class="slick-next slick-arrow" type="button"></button>'
+    });
+
+    $(".js-gallery-nav").slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: ".gallery",
+      dots: false,
+      centerMode: true,
+      arrows: false,
+      focusOnSelect: true
+    });
+  }
+
+  initSlick();
+
+  $(".init-tab-slick").on("click", function() {
     setTimeout(function() {
-      initSummerAcademySlick();
+      initTabSlick();
     }, 100);
   });
 

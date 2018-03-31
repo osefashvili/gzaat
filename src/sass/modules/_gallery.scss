@@ -1,8 +1,9 @@
 .gallery {
   &-wrapper {
     width: 960px;
-    max-width: 90%;
+    max-width: 80%;
     margin: auto;
+    margin-top: 25px;
   }
   &__item {
     img {
